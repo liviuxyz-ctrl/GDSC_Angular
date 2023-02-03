@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="head">
+    {{card.title}}
+  </div>
+  <div class="card_body">
+  <span>  {{card.bodyText}} </span>
+  <ng-container *ngIf="card.showImg">
+    <img class="card-img" [src]="card.url" [alt]="'info'">
+  </ng-container>
+  </div>
+  <div class="actions">
+    <button (click)="card.showImg = !card.showImg">Click me</button>
+  </div>
+</div>

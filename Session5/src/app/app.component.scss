@@ -1,0 +1,20 @@
+.app {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background-color: aqua;
+  place-items: center;
+
+  .card{
+    background-color: royalblue;
+    font-size: 2rem;
+    height: 500px;
+    width: floor(100% / 3);
+    display: grid;
+    place-items: center;
+
+    &>span{
+      color: white;
+    }
+  }
+}

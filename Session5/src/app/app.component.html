@@ -1,0 +1,7 @@
+<div class="app">
+  <div appScroll (onScrollDown)="onScroll($event)" class="card">
+    <span> cri </span>
+    <span> {{counter}} </span>
+    <input type="number" [(ngModel)]="counter" (change)="onChange()">
+  </div>
+</div>
